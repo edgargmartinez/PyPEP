@@ -1,15 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Created on Fri Apr  5 13:15:13 2019
-
-@author: egmm
-"""
-
 import os
 import sys
-import setuptools
 from distutils.util import convert_path
+from setuptools import find_packages
 try:
     from setuptools import setup
 except ImportError:
@@ -33,9 +27,10 @@ setup(
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python',
         'Topic :: Scientific/Engineering',
-        'Topic :: Scientific/Engineering :: Petroleum'
+        'Topic :: Scientific/Engineering :: Petroleum',
+        'Topic :: Petroelum Engineering'
     ],
-    packages = setuptools.find_packages(),
+    packages = find_packages(),
     install_requires=[
         'numpy>=1.15',
         'scipy>=1.1',
@@ -46,3 +41,4 @@ setup(
     author_email='edgarg.martinezm@gmail.com',
     download_url='https://github.com/edgargmartinez/PyPEP/'
 )
+
